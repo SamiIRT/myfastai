@@ -1,0 +1,42 @@
+To upload your image, .pkl file (larger than 100 MB), and .py file to your GitHub repository named myfastai, follow these steps:
+
+Install Git LFS if you haven't already. You can follow the instructions on the official website.
+
+Open a terminal and navigate to the folder containing your image, .pkl file, and .py file.
+
+Clone your myfastai repository:
+
+git clone https://github.com/<your-username>/myfastai
+Replace <your-username> with your GitHub username.
+
+Move your image, .pkl file, and .py file into the cloned myfastai folder.
+
+Navigate to the myfastai folder in the terminal:
+
+cd myfastai
+Initialize Git LFS:
+
+git lfs install
+Track the large .pkl file with Git LFS:
+
+git lfs track "*.pkl"
+Add the changes to the .gitattributes file:
+
+git add .gitattributes
+Add all the files (image, .pkl, and .py) to the staging area:
+
+git add .
+Commit the changes:
+
+git commit -m "Add image, pkl file, and py file"
+Push the changes to the remote repository:
+
+git push -u origin main
+Now, your image, .pkl file, and .py file should be successfully uploaded to your myfastai GitHub repository using Git LFS for the large .pkl file.
+
+
+
+
+
+
+
